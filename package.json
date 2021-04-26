@@ -1,0 +1,28 @@
+{
+  "name": "fabienhupel_7_26042021",
+  "version": "1.0.0",
+  "description": "Les bons petits plats",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "lint": "eslint src/js/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabhup/Fabienhupel_7_26042021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabhup/Fabienhupel_7_26042021/issues"
+  },
+  "homepage": "https://github.com/fabhup/Fabienhupel_7_26042021#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0"
+  }
+}
