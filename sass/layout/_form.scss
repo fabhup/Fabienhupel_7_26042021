@@ -1,0 +1,87 @@
+.input-group{
+    position:relative;
+}
+
+.form-control{
+    opacity:0.6;
+    position:relative;
+    z-index:2;
+}
+#btn-search {
+    right:0;
+    top:0;
+    bottom:0;
+    z-index:3;
+    opacity:1;
+    border-radius: 0px 3px 3px 0px;
+}
+
+// .form-control:hover, .form-control:focus-within, .form-control:focus-visible, .form-control:active {
+//     // padding-right: 0.75rem !important;
+//     opacity:1;
+//     & #btn-search {
+//         opacity:1;
+//         background-color:$dark;
+//     }
+// }
+
+.searchbar--placeholder { 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0.55rem 0.75rem;
+    position: absolute;
+    left:0;
+    z-index:1;
+    & > li {
+        animation: animate2 1s backwards ease-in-out;
+    }
+  }  
+
+  #searchbar--placeholder {
+  @for $i from 1 to 6 {
+    &--#{$i} {
+        animation-delay: #{$i}s;
+    }
+  }
+}
+
+#searchbar--placeholder::before { /* Chrome/Opera/Safari */
+    content: "Rechercher un ingrédient, appareil, ustensiles ou une recette";
+    white-space: nowrap;
+    width:100%;
+    @media (max-width:768px) { 
+        content: "Rechercher une recette";
+        animation: animate 8s infinite;
+    }
+    @media (max-width:250px) { 
+        content: "Rechercher";
+        animation: none;
+    }
+  }
+
+#searchbar--placeholder { /* Chrome/Opera/Safari */
+    @media (max-width:768px) { 
+        animation: animate2 1s infinite ease-in-out;
+    }
+  }
+
+// Rechercher un ingrédient, appareil, ustensiles ou une recette
+@keyframes animate {
+    0% {
+        content: "Rechercher une recette"; 
+    }
+    25% {
+        content: "Rechercher un ingrédient";
+    }
+    50% {
+        content: "Rechercher un appareil";
+    }
+    75% {
+        content: "Rechercher un ustensile";
+    }
+}
+
+.input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+}

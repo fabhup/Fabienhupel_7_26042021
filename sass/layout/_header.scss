@@ -1,0 +1,12 @@
+
+.navbar-brand {
+    &:hover .logo-img path{
+        fill: darken($primary, 15%);
+    }
+}
+
+.logo-img {
+    & path {
+        fill: $primary;
+    }
+}

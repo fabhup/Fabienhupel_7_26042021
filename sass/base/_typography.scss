@@ -1,5 +1,28 @@
-// @font-face {
-//   font-family: "dm-sans";
-//   src: url("../../public/font/DM_Sans/DMSans-Regular.ttf")
-//       format("truetype");
-// }
+@font-face {
+  font-family: "dm-sans";
+  src: url("../../public/font/DM_Sans/DMSans-Regular.ttf")
+      format("truetype");
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../../public/font/Roboto/Roboto-Regular.ttf")
+        format("truetype");
+  }
+
+  @font-face {
+    font-family: "lato";
+    src: url("../../public/font/Lato/Lato-Regular.ttf")
+        format("truetype");
+  }
+
+  .logo {
+      font-family: "dm-sans";
+      font-weight: bold;
+  }
+
+   html {
+    font-size: calc(6px + 0.3rem + 0.4vw);
+  }
+
+ 

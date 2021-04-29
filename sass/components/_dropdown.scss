@@ -1,0 +1,44 @@
+.dropdown-toggle::after {
+    position: absolute;
+    right: 10px;
+    top: calc(1rem + 1px);
+}
+
+.dropdown {
+    padding: 6px;
+
+    & .form-control {
+        // height: calc(0.75rem + 2px);
+        color: white !important;
+    }
+
+    & li {
+    display: block;
+    font-size: calc(6px + 0.2rem + 0.2vw);
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: normal;
+    padding-bottom: 2px;
+    color:white;
+    }
+    &-item {
+    font-weight:bold;
+    padding: 0.2rem !important;
+    &:hover, &-item:focus {
+        color: white !important; 
+        background-color: transparent !important;
+    }
+    }
+}
+
+.dropdown-toggle[aria-expanded="false"] > .dropdown-menu {
+    display:none;
+}
+
+.dropdown-menu {
+    // top: 2rem !important;
+    transform: none !important;
+    padding: 10px !important;
+  }
+
+
