@@ -1,3 +1,15 @@
+
+.card {
+    height:97%;
+}
+
 .card-text {
     font-size: calc(8px + 0.2rem + 0.1vw);
+    max-height:300px;
+
+}
+
+.recipe-description {
+    overflow: hidden;
+    text-overflow: ellipsis !important;
 }

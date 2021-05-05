@@ -43,14 +43,10 @@ dropdownButtons.forEach(elt => elt.addEventListener("click",function() {
         elt.setAttribute('aria-expanded',"true");
         elt.parentElement.classList.add('show');
         }
-        else {
-            console.log(1);
-        }
     })
 )
 
 dropdowns.forEach(elt => elt.addEventListener("focusin",function() {
-        console.log("open dropdown");
         elt.classList.remove('col-sm-3');
         elt.classList.remove('col-md-3');
         elt.classList.add('col-md-6');
@@ -63,7 +59,7 @@ function removeClassDropdownExpanded(elt) {
 }
 
 dropdowns.forEach(elt => elt.addEventListener("focusout",function() {
-        // elt.firstChild.nextSibling.setAttribute("aria-expanded","false");
+        elt.firstChild.nextSibling.setAttribute("aria-expanded","false");
         removeClassDropdownExpanded(elt);
     })
 )

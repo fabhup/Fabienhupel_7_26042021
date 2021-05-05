@@ -33,18 +33,7 @@
     position: absolute;
     left:0;
     z-index:1;
-    & > li {
-        animation: animate2 1s backwards ease-in-out;
-    }
   }  
-
-  #searchbar--placeholder {
-  @for $i from 1 to 6 {
-    &--#{$i} {
-        animation-delay: #{$i}s;
-    }
-  }
-}
 
 #searchbar--placeholder::before { /* Chrome/Opera/Safari */
     content: "Rechercher un ingrédient, appareil, ustensiles ou une recette";
@@ -53,16 +42,12 @@
     @media (max-width:768px) { 
         content: "Rechercher une recette";
         animation: animate 8s infinite;
+        -webkit-animation: animate 8s infinite;
     }
     @media (max-width:250px) { 
         content: "Rechercher";
         animation: none;
-    }
-  }
-
-#searchbar--placeholder { /* Chrome/Opera/Safari */
-    @media (max-width:768px) { 
-        animation: animate2 1s infinite ease-in-out;
+        -webkit-animation: none;
     }
   }
 

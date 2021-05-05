@@ -63,8 +63,18 @@ html {
   padding: 10px !important;
 }
 
+.card {
+  height: 97%;
+}
+
 .card-text {
   font-size: calc(8px + 0.2rem + 0.1vw);
+  max-height: 300px;
+}
+
+.recipe-description {
+  overflow: hidden;
+  text-overflow: ellipsis !important;
 }
 
 .navbar-brand:hover .logo-img path {
@@ -103,25 +113,6 @@ html {
   left: 0;
   z-index: 1;
 }
-.searchbar--placeholder > li {
-  animation: animate2 1s backwards ease-in-out;
-}
-
-#searchbar--placeholder--1 {
-  animation-delay: 1s;
-}
-#searchbar--placeholder--2 {
-  animation-delay: 2s;
-}
-#searchbar--placeholder--3 {
-  animation-delay: 3s;
-}
-#searchbar--placeholder--4 {
-  animation-delay: 4s;
-}
-#searchbar--placeholder--5 {
-  animation-delay: 5s;
-}
 
 #searchbar--placeholder::before {
   /* Chrome/Opera/Safari */
@@ -133,21 +124,14 @@ html {
   #searchbar--placeholder::before {
     content: "Rechercher une recette";
     animation: animate 8s infinite;
+    -webkit-animation: animate 8s infinite;
   }
 }
 @media (max-width: 250px) {
   #searchbar--placeholder::before {
     content: "Rechercher";
     animation: none;
-  }
-}
-
-#searchbar--placeholder {
-  /* Chrome/Opera/Safari */
-}
-@media (max-width: 768px) {
-  #searchbar--placeholder {
-    animation: animate2 1s infinite ease-in-out;
+    -webkit-animation: none;
   }
 }
 
