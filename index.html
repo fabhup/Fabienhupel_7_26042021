@@ -34,65 +34,31 @@
             </div>
         </div>
         <div class ="d-flex flex-wrap">
+            <div id="active-filters">
+            </div>
+        </div>
+        <div class ="d-flex flex-wrap">
             <div id="dropdown-ingredients" class="dropdown col-12 col-md-3">
                 <div class="btn btn-info btn-sm dropdown-toggle bg-info border-0 text-right text-white position-relative w-100 p-0 mt-1 mx-0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <input class="form-control border-0 shadow-none bg-transparent py-0 text-white w-100" type="text" placeholder="Ingrédients" aria-label="Rechercher des ingrédients">
-                    <div id="dropdown-menu-ingredients" class="dropdown-menu border-0 bg-info list-unstyled m-0 w-100 position-relative" aria-labelledby="dropdown-ingredients">
-                        <ul class="list-unstyled d-flex flex-wrap p-0 mb-0">   
-                            <li class="dropdown-item col-4 col-sm-4">Lait de coco</li>
-                            <li class="dropdown-item col-4 col-sm-4">Sucre de coco</li>
-                            <li class="dropdown-item col-4 col-sm-4">Sucre en poudre</li>
-                            <li class="dropdown-item col-4 col-sm-4">Lait entier</li>
-                            <li class="dropdown-item col-4 col-sm-4">Lait demi écrémé</li>
-                            <li class="dropdown-item col-4 col-sm-4">Lait de brebis</li>
-                            <li class="dropdown-item col-4 col-sm-4">Sucre de canne</li>
-                            <li class="dropdown-item col-4 col-sm-4">Chocolat noir</li>
-                            <li class="dropdown-item col-4 col-sm-4">Chocolat en poudre</li>
-                            <li class="dropdown-item col-4 col-sm-4">Cacao amer</li>
-                            <li class="dropdown-item col-4 col-sm-4">Chocolat blanc</li>
-                            <li class="dropdown-item col-4 col-sm-4">Caramel</li>
-                            <li class="dropdown-item col-4 col-sm-4">Poivre</li>
-                            <li class="dropdown-item col-4 col-sm-4">Sel</li>
-                            <li class="dropdown-item col-4 col-sm-4">Sauce tomate</li>
-                            <li class="dropdown-item col-4 col-sm-4">Concombre</li>
-                        </ul>
+                    <div id="dropdown-menu-ingredients" class="dropdown-menu border-0 bg-info list-unstyled m-0 w-100 position-relative" aria-labelledby="dropdown-ingredients" data-type="ingredients">
                     </div>
                 </div>
             </div>
 
-            <div id="dropdown-appareils" class="dropdown col-12 col-md-3">
+            <div id="dropdown-appliances" class="dropdown col-12 col-md-3">
                 <div class="btn btn-success btn-sm dropdown-toggle bg-success border-0 text-right text-white position-relative w-100 p-0 mt-1 mx-0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <input class="form-control border-0 shadow-none bg-transparent py-0 text-white w-100" type="text" placeholder="Appareils" aria-label="Rechercher des appareils">
-                    <div id="dropdown-menu-appareils" class="dropdown-menu border-0 bg-success list-unstyled m-0 w-100 position-relative" aria-labelledby="dropdown-appareils">
-                        <ul class="list-unstyled d-flex flex-wrap p-0 mb-0">   
-                            <li class="dropdown-item col-4 col-sm-4">Casserole</li>
-                            <li class="dropdown-item col-4 col-sm-4">Cocotte</li>
-                            <li class="dropdown-item col-4 col-sm-4">Mixer</li>
-                            <li class="dropdown-item col-4 col-sm-4">Blender</li>
-                            <li class="dropdown-item col-4 col-sm-4">Four</li>
-                            <li class="dropdown-item col-4 col-sm-4">Congélateur</li>
-                            <li class="dropdown-item col-4 col-sm-4">Grill</li>
-                            <li class="dropdown-item col-4 col-sm-4">Barbecue</li>
-                        </ul>
+                    <div id="dropdown-menu-appliances" class="dropdown-menu border-0 bg-success list-unstyled m-0 w-100 position-relative" aria-labelledby="dropdown-appliances" data-type="appliances">
                     </div>
                 </div>
             </div>
 
 
-            <div id="dropdown-ustensiles" class="dropdown col-12 col-md-3">
+            <div id="dropdown-ustensils" class="dropdown col-12 col-md-3">
                 <div class="btn btn-primary btn-sm dropdown-toggle bg-primary border-0 text-right text-white position-relative w-100 p-0 mt-1 mx-0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <input class="form-control border-0 shadow-none bg-transparent py-0 text-white w-100" type="text" placeholder="Ustensiles" aria-label="Rechercher des ustensiles">
-                    <div id="dropdown-menu-ustensiles" class="dropdown-menu border-0 bg-primary list-unstyled m-0 w-100 position-relative" aria-labelledby="dropdown-ustensiles">
-                        <ul class="list-unstyled d-flex flex-wrap p-0 mb-0">   
-                            <li class="dropdown-item col-4 col-sm-4">Cuillère</li>
-                            <li class="dropdown-item col-4 col-sm-4">Rouleau à patisserie</li>
-                            <li class="dropdown-item col-4 col-sm-4">Fouet</li>
-                            <li class="dropdown-item col-4 col-sm-4">Spatule</li>
-                            <li class="dropdown-item col-4 col-sm-4">Couteau</li>
-                            <li class="dropdown-item col-4 col-sm-4">Fourchette</li>
-                            <li class="dropdown-item col-4 col-sm-4">Saladier</li>
-                            <li class="dropdown-item col-4 col-sm-4">Bol</li>
-                        </ul>
+                    <div id="dropdown-menu-ustensils" class="dropdown-menu border-0 bg-primary list-unstyled m-0 w-100 position-relative" aria-labelledby="dropdown-ustensiles" data-type="ustensils">
                     </div>
                 </div>
             </div>
@@ -107,11 +73,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="module" src="./src/js/searchbar.js"></script>
+    <script type="module" src="./src/js/dropdown.js"></script>
+    <script type="module" src="./src/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="./src/js/searchbar.js"></script>
-    <script src="./src/js/dropdown.js"></script>
-    <script type="module" src="./src/js/index.js"></script>
+
   </body>
 </html>

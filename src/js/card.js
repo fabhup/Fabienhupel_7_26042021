@@ -63,4 +63,14 @@ function createCard(data) {
     return cardElement
 }
 
-export {createCard}
+function createCards(data) {
+    const cardsContainer = document.getElementById('cards-container');
+    cardsContainer.textContent = ''
+    for (const elt of data) {
+        const cardElement = createCard(elt);
+        cardsContainer.appendChild(cardElement);
+    }
+}
+
+
+export {createCards}
