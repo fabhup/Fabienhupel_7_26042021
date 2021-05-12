@@ -1,7 +1,7 @@
 import {dataResults, updateDataResults, updateResultsIds, resetDataResults} from './index.js'
 import {dataIds, cleanDataForSearch} from './cleandata.js' 
 import {searchResultsIds} from './globalsearch.js' 
-import {searchInString} from './search-functions.js' 
+import {areWordsInString} from './search-functions.js' 
 
 let filtersResultsIds = dataIds;
 let activeFiltersKeys = {
@@ -35,8 +35,8 @@ const dropdownInputs = document.querySelectorAll('.dropdown-toggle > input');
 function searchInDropdownData(dropdownType, searchedString) {
     const dropdownMenu= document.getElementById("dropdown-menu-"+dropdownType);
     const dropdownData= getDataForDropdown(dataResults, dropdownType+"Keys",dropdownType+"ListCleaned");
-    searchedString = cleanDataForSearch(searchedString);
-    const dropdownFiltered = Object.keys(dropdownData).filter(x => searchInString(x,searchedString)!= "mismatch").reduce((obj, key) => ({ ...obj, [key]: dropdownData[key] }), {})
+    const searchedWords = cleanDataForSearch(searchedString).split(" ");
+    const dropdownFiltered = Object.keys(dropdownData).filter(x => areWordsInString(x,searchedWords)!= "mismatch").reduce((obj, key) => ({ ...obj, [key]: dropdownData[key] }), {})
     dropdownMenu.textContent = '';  //to remove all dropdown items
     createDropdownMenu(dropdownMenu,dropdownFiltered); 
 }
@@ -181,13 +181,6 @@ function removeClassDropdownExpanded(elt) {
     elt.classList.add('col-md-3');
     elt.classList.remove('col-md-6');
 }
-
-// dropdowns.forEach(elt => elt.addEventListener("focusout",function(event) {
-//         event.stopPropagation();
-//         elt.firstChild.nextSibling.setAttribute("aria-expanded","false");
-//         // removeClassDropdownExpanded(elt);
-//     })
-// )
 
 function getDataForDropdown(data, dataKeysArrayName, dataValuesArrayName) {
     const keys = data.map(item => item[dataKeysArrayName]).flat();

@@ -8,10 +8,6 @@ let dataResults = dataCleaned;
 let resultsIds = dataIds;
 
 
-function resetDataResults() { 
-    dataResults = dataCleaned; 
-}
-
 function updateDataResults() { 
     dataResults = dataResults.filter(elt=>resultsIds.includes(elt.id)); 
     createCards(dataResults);
@@ -24,6 +20,10 @@ function updateDataResultsWithSortByRelevance(sortedIdsArray) {
     dataResults = resultsIdsSorted.map((i) => dataResults.find((j) => j.id === i)); 
     createCards(dataResults);
     updateDropdownlists(dataResults);
+}
+
+function resetDataResults() { 
+    dataResults = dataCleaned; 
 }
 
 function updateResultsIds(filtersResultsIds, searchResultsIds) { 
