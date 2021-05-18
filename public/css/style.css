@@ -35,6 +35,7 @@ html {
 }
 .dropdown .form-control {
   color: white !important;
+  cursor: pointer !important;
 }
 .dropdown li {
   display: block;

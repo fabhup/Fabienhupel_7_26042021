@@ -1,84 +1,82 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./public/css/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Les Petits Plats</title>
-  </head>
+<html lang="fr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./public/css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <title>Les Petits Plats</title>
+    </head>
 
-  <body>
-    
-    <div class="container">
-        <div class="logo">
-            <nav class="navbar d-flex justify-content-center flex-column p-1">
-                <a class="navbar-brand text-center text-primary m-auto" href="#">
-                <svg class="logo-img d-block m-auto" width="52" height="47" viewBox="0 0 52 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="text-primary" fill-rule="evenodd" clip-rule="evenodd" d="M39.5083 25.3424V35.1415H12.4024V25.3424C7.99768 25.3424 4.60945 21.9635 4.60945 17.5708C4.60945 13.1781 7.99768 9.79908 12.4024 9.79908C15.4518 9.79908 18.1624 11.4886 19.5177 14.1918L22.9059 12.5023C21.8895 10.8128 20.873 9.12328 19.1789 8.10958C20.5342 5.74429 22.9059 4.05479 25.9553 4.05479C30.36 4.05479 33.7483 7.43378 33.7483 11.8265C33.7483 13.1781 33.4095 14.5297 32.7318 15.8813L36.12 17.9087C37.1365 16.2192 37.8142 14.1918 37.8142 11.8265C37.8142 11.1507 37.8142 10.8128 37.8142 10.137C38.4918 9.79908 39.1695 9.79908 39.8471 9.79908C44.2518 9.79908 47.64 13.1781 47.64 17.5708C47.64 21.9635 43.913 25.3424 39.5083 25.3424ZM39.5083 42.9132H12.4024V39.1963H39.5083V42.9132ZM39.5083 6.08219C38.4918 6.08219 37.4753 6.42009 36.12 6.42009C34.0871 2.70319 30.36 0 25.9553 0C21.5506 0 17.4847 2.36529 15.7906 6.42009C14.7742 6.08219 13.7577 6.08219 12.4024 6.08219C5.96474 6.08219 0.882385 11.1507 0.882385 17.5708C0.882385 22.6393 4.27062 27.0319 8.67533 28.3835V46.2922H43.5742V28.7214C47.9789 27.0319 51.3671 22.9772 51.3671 17.9087C51.3671 11.4886 45.9459 6.08219 39.5083 6.08219ZM22.2283 31.0867H18.5012V23.653H22.2283V31.0867ZM33.7483 31.0867H30.0212V23.653H33.7483V31.0867Z" fill="#D04F4F"/>
-                </svg>  
-                Les petits plats      
-                </a>
-            </nav>
-        </div>
-        <div class="d-flex justify-content-center my-1">
-            <div class="input-group rounded">
-                <input id="searchbar" class="form-control rounded border border-0 bg-light text-truncate position-relative pr-5" type="search" placeholder="" aria-label="Rechercher un ingrédient, appareil, ustensiles ou une recette">
-                <span id="searchbar--placeholder" class="searchbar--placeholder" class="border-0">
-                </span>
-                <button id="btn-search" class="input-group-text border border-0 bg-light position-absolute">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <nav class="navbar d-flex justify-content-center flex-column p-1">
+                    <a class="navbar-brand text-center text-primary m-auto" href="#">
+                        <svg class="logo-img d-block m-auto" width="52" height="47" viewBox="0 0 52 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="text-primary" fill-rule="evenodd" clip-rule="evenodd" d="M39.5083 25.3424V35.1415H12.4024V25.3424C7.99768 25.3424 4.60945 21.9635 4.60945 17.5708C4.60945 13.1781 7.99768 9.79908 12.4024 9.79908C15.4518 9.79908 18.1624 11.4886 19.5177 14.1918L22.9059 12.5023C21.8895 10.8128 20.873 9.12328 19.1789 8.10958C20.5342 5.74429 22.9059 4.05479 25.9553 4.05479C30.36 4.05479 33.7483 7.43378 33.7483 11.8265C33.7483 13.1781 33.4095 14.5297 32.7318 15.8813L36.12 17.9087C37.1365 16.2192 37.8142 14.1918 37.8142 11.8265C37.8142 11.1507 37.8142 10.8128 37.8142 10.137C38.4918 9.79908 39.1695 9.79908 39.8471 9.79908C44.2518 9.79908 47.64 13.1781 47.64 17.5708C47.64 21.9635 43.913 25.3424 39.5083 25.3424ZM39.5083 42.9132H12.4024V39.1963H39.5083V42.9132ZM39.5083 6.08219C38.4918 6.08219 37.4753 6.42009 36.12 6.42009C34.0871 2.70319 30.36 0 25.9553 0C21.5506 0 17.4847 2.36529 15.7906 6.42009C14.7742 6.08219 13.7577 6.08219 12.4024 6.08219C5.96474 6.08219 0.882385 11.1507 0.882385 17.5708C0.882385 22.6393 4.27062 27.0319 8.67533 28.3835V46.2922H43.5742V28.7214C47.9789 27.0319 51.3671 22.9772 51.3671 17.9087C51.3671 11.4886 45.9459 6.08219 39.5083 6.08219ZM22.2283 31.0867H18.5012V23.653H22.2283V31.0867ZM33.7483 31.0867H30.0212V23.653H33.7483V31.0867Z" fill="#D04F4F"/>
+                        </svg>  
+                        Les petits plats      
+                    </a>
+                </nav>
             </div>
-        </div>
-        <div class ="d-flex flex-wrap">
-            <div id="active-filters">
+            <div class="d-flex justify-content-center my-1">
+                <div class="input-group rounded">
+                    <input id="searchbar" class="form-control rounded border border-0 bg-light text-truncate position-relative pr-5" type="search" placeholder="" aria-label="Rechercher un ingrédient, appareil, ustensiles ou une recette">
+                    <span id="searchbar--placeholder" class="searchbar--placeholder border-0">
+                    </span>
+                    <button id="btn-search" class="input-group-text border border-0 bg-light position-absolute">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class ="d-flex flex-wrap">
-            <div id="dropdown-ingredients" class="dropdown col-12 col-md-3">
-                <div class="btn btn-info btn-sm dropdown-toggle bg-info border-0 text-right text-white position-relative w-100 p-0 mt-1 mx-0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <input class="form-control border-0 shadow-none bg-transparent py-0 text-white w-100" type="text" placeholder="Ingrédients" aria-label="Rechercher des ingrédients">
-                    <div id="dropdown-menu-ingredients" class="dropdown-menu border-0 bg-info list-unstyled m-0 w-100 position-relative" aria-labelledby="dropdown-ingredients" data-type="ingredients">
+            <div class ="d-flex flex-wrap">
+                <div id="active-filters">
+                </div>
+            </div>
+            <div class ="d-flex flex-wrap">
+                <div id="dropdown-ingredients" class="dropdown col-12 col-md-3">
+                    <div class="btn btn-info btn-sm dropdown-toggle bg-info border-0 text-right text-white position-relative w-100 p-0 mt-1 mx-0" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <input class="form-control border-0 shadow-none bg-transparent py-0 text-white w-100" type="text" placeholder="Ingrédients" aria-label="Rechercher des ingrédients">
+                        <div id="dropdown-menu-ingredients" class="dropdown-menu border-0 bg-info list-unstyled m-0 w-100 position-relative" aria-labelledby="dropdown-ingredients" data-type="ingredients">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dropdown-appliances" class="dropdown col-12 col-md-3">
+                    <div class="btn btn-success btn-sm dropdown-toggle bg-success border-0 text-right text-white position-relative w-100 p-0 mt-1 mx-0" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <input class="form-control border-0 shadow-none bg-transparent py-0 text-white w-100" type="text" placeholder="Appareils" aria-label="Rechercher des appareils">
+                        <div id="dropdown-menu-appliances" class="dropdown-menu border-0 bg-success list-unstyled m-0 w-100 position-relative" aria-labelledby="dropdown-appliances" data-type="appliances">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="dropdown-ustensils" class="dropdown col-12 col-md-3">
+                    <div class="btn btn-primary btn-sm dropdown-toggle bg-primary border-0 text-right text-white position-relative w-100 p-0 mt-1 mx-0" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <input class="form-control border-0 shadow-none bg-transparent py-0 text-white w-100" type="text" placeholder="Ustensiles" aria-label="Rechercher des ustensiles">
+                        <div id="dropdown-menu-ustensils" class="dropdown-menu border-0 bg-primary list-unstyled m-0 w-100 position-relative" aria-labelledby="dropdown-ustensils" data-type="ustensils">
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div id="dropdown-appliances" class="dropdown col-12 col-md-3">
-                <div class="btn btn-success btn-sm dropdown-toggle bg-success border-0 text-right text-white position-relative w-100 p-0 mt-1 mx-0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <input class="form-control border-0 shadow-none bg-transparent py-0 text-white w-100" type="text" placeholder="Appareils" aria-label="Rechercher des appareils">
-                    <div id="dropdown-menu-appliances" class="dropdown-menu border-0 bg-success list-unstyled m-0 w-100 position-relative" aria-labelledby="dropdown-appliances" data-type="appliances">
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="dropdown-ustensils" class="dropdown col-12 col-md-3">
-                <div class="btn btn-primary btn-sm dropdown-toggle bg-primary border-0 text-right text-white position-relative w-100 p-0 mt-1 mx-0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <input class="form-control border-0 shadow-none bg-transparent py-0 text-white w-100" type="text" placeholder="Ustensiles" aria-label="Rechercher des ustensiles">
-                    <div id="dropdown-menu-ustensils" class="dropdown-menu border-0 bg-primary list-unstyled m-0 w-100 position-relative" aria-labelledby="dropdown-ustensiles" data-type="ustensils">
-                    </div>
-                </div>
+        <div class="container mt-4">
+            <div id="cards-container" class="row">
+            <!-- Cards Content loaded with Javascript -->
             </div>
         </div>
-    </div>
-
-    <div class="container mt-4">
-        <div id="cards-container" class="row">
-          <!-- Cards Content loaded with Javascript -->
-        </div>
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script type="module" src="./src/js/searchbar.js"></script>
-    <script type="module" src="./src/js/dropdown.js"></script>
-    <script type="module" src="./src/js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-  </body>
+        <script type="module" src="./src/js/searchbar.js"></script>
+        <script type="module" src="./src/js/dropdown.js"></script>
+        <script type="module" src="./src/js/index.js"></script>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
 </html>
