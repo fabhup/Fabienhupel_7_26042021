@@ -195,7 +195,7 @@ function updateFiltersResultsIdsOnNewKey(typeFilter, filterKey) {
 function createFilterButton(type, key, value) {
   const activeFiltersDiv = document.getElementById("active-filters");
   let newButton = document.createElement("button");
-  newButton.classList.add("btn", "text-white", "m-2", `activefilter-${type}`);
+  newButton.classList.add("btn","text-white", "m-2", `activefilter-${type}`);
   newButton.classList.add(dropdownTypeClassBg[type]);
   newButton.setAttribute("data-key", key);
   const newButtonHTMLContent = `<span>${value} </span><i class="far fa-times-circle"></i>`;
