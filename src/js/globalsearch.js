@@ -38,22 +38,12 @@ function globalSearch(data, searchedString) {
       });
       return true;
     } else if (
-      searchInString(item.ingredientsListForSearch.join(" "), searchedString) !=
-      "mismatch"
-    ) {
-      listMatchItem.push({
-        id: item.id,
-        matchType: "ingredients",
-        sortOrder: 2,
-      });
-      return true;
-    } else if (
       searchInString(item.allDataForSearch, searchedString) != "mismatch"
     ) {
       listMatchItem.push({
         id: item.id,
         matchType: "description",
-        sortOrder: 3,
+        sortOrder: 2,
       });
       return true;
     } else {
