@@ -83,9 +83,17 @@ function createCard(data) {
 function createCards(data) {
   const cardsContainer = document.getElementById("cards-container");
   cardsContainer.textContent = "";
-  for (const elt of data) {
-    const cardElement = createCard(elt);
-    cardsContainer.appendChild(cardElement);
+  if (data.length > 0) {
+    for (const elt of data) {
+      const cardElement = createCard(elt);
+      cardsContainer.appendChild(cardElement);
+    }
+  } else {
+    const noresultsElement = document.createElement("div");
+    noresultsElement.classList.add("my-2", "mx-4", "h4","text-muted","text-center","w-100");
+    noresultsElement.innerHTML = `Aucune recette ne correspond à votre recherche.<span class="d-block my-2"> 
+      Vous pouvez chercher : <span class="d-inline-block">« tarte aux pommes »</span>, <span class="d-inline-block">« poisson » ...</span></span>`;
+    cardsContainer.appendChild(noresultsElement);
   }
 }
 
